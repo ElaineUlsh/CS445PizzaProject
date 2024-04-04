@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\bsuPizza.mdf" />
+    <Content Include="App_Data\bsuPizza_log.ldf">
+      <DependentUpon>bsuPizza.mdf</DependentUpon>
+    </Content>
     <Content Include="Registration.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
