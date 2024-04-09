@@ -246,7 +246,7 @@
             </div>
             <div class="col-sm-4">
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit"
-                    CssClass="btn btn-primary"></asp:Button>
+                    CssClass="btn btn-primary" OnClick="btnSubmit_Click"></asp:Button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input id="btnReset" type="reset" value="Reset" class="btn btn-danger" />
             </div>
