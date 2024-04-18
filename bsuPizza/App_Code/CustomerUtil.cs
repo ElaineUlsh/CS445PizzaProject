@@ -72,5 +72,43 @@ namespace bsuPizza.App_Code
             conn.Close();
             return false;
         } // Close checkPassword method
+
+        public CustomerUtil GetUserInformation(string userNameInput) { //Start GetUserInformation method
+            CustomerUtil c = new CustomerUtil();
+            SqlConnection conn = new
+            SqlConnection(ConfigurationManager.ConnectionStrings["bsuPizza"].ConnectionString);
+            conn.Open();
+            string searchStr = "select UserName, FName, LName, Email, Password, Country, Age, Gender from Customer where UserName = @UserName";
+            SqlCommand comd = new SqlCommand(searchStr, conn);
+            comd.Parameters.AddWithValue("@UserName", userNameInput);
+            SqlDataReader dr = comd.ExecuteReader();
+            dr.Read();
+
+            if (dr.HasRows) {
+                c.UserName = dr[0].ToString();
+                c.FName = dr[1].ToString();
+                c.LName = dr[2].ToString();
+                c.Email = dr[3].ToString();
+                c.Password = dr[4].ToString();
+                c.Country = dr[5].ToString();
+                c.Age = dr[6].ToString();
+                c.Gender = dr[7].ToString();
+            }
+            dr.Close();
+            conn.Close();
+            return c;
+        } // Close GetUserInformation method
+
+        public void ResetPassword(string newPassword) { // Start ResetPassword method
+            SqlConnection conn = new
+            SqlConnection(ConfigurationManager.ConnectionStrings["bsuPizza"].ConnectionString);
+            conn.Open();
+            string updateStr = "update Customer set Customer.Password=@Password where Customer.UserName = @UserName";
+            SqlCommand comd = new SqlCommand(updateStr, conn);
+            comd.Parameters.AddWithValue("@UserName", UserName);
+            comd.Parameters.AddWithValue("@Password", newPassword);
+            comd.ExecuteNonQuery();
+            conn.Close();
+        }// Close ResetPassowrd method
     } // Close CustomerUtil class
 } // Close bsuPizza.App_Code

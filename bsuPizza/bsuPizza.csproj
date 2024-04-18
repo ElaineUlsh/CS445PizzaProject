@@ -71,12 +71,66 @@
     <Content Include="App_Data\bsuPizza_log.ldf">
       <DependentUpon>bsuPizza.mdf</DependentUpon>
     </Content>
+    <Content Include="css\bootstrap-drawer.css" />
+    <Content Include="css\bsuPizza.css" />
+    <Content Include="css\introjs.css" />
+    <Content Include="css\liquid-slider.css" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\bsulogo.jpg" />
+    <Content Include="images\chicago.jpg" />
+    <Content Include="images\GrilledChicken.png" />
+    <Content Include="images\peperoni.jpg" />
+    <Content Include="images\Pepperoni.png" />
+    <Content Include="images\pizza.jpg" />
+    <Content Include="images\pizza_big.jpg" />
+    <Content Include="images\pizza_small.jpg" />
+    <Content Include="images\rocha.jpg" />
+    <Content Include="images\Steak.png" />
+    <Content Include="images\vegan.jpg" />
+    <Content Include="images\vegie.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bsuPizza.js" />
+    <Content Include="js\drawer.js" />
+    <Content Include="js\intro.js" />
+    <Content Include="js\jquery.localize.min.js" />
+    <Content Include="js\jqzoom_ev-2.3\BSD-LICENSE.txt" />
+    <Content Include="js\jqzoom_ev-2.3\css\jquery.jqzoom.css" />
+    <Content Include="js\jqzoom_ev-2.3\demos\demo_alwayson.html" />
+    <Content Include="js\jqzoom_ev-2.3\demos\demo_drag.html" />
+    <Content Include="js\jqzoom_ev-2.3\demos\demo_innerzoom.html" />
+    <Content Include="js\jqzoom_ev-2.3\demos\demo_resizeposition.html" />
+    <Content Include="js\jqzoom_ev-2.3\demos\demo_reverse.html" />
+    <Content Include="js\jqzoom_ev-2.3\demos\demo_standard.html" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\thumbs\triumph_thumb1.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\thumbs\triumph_thumb2.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\thumbs\triumph_thumb3.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\triumph_big1.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\triumph_big2.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\triumph_big3.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\triumph_small1.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\triumph_small2.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\demos\imgProd\triumph_small3.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\images\advertise.jpg" />
+    <Content Include="js\jqzoom_ev-2.3\images\zoomloader.gif" />
+    <Content Include="js\jqzoom_ev-2.3\js\jquery-1.6.js" />
+    <Content Include="js\jqzoom_ev-2.3\js\jquery.jqzoom-core-pack.js" />
+    <Content Include="js\jqzoom_ev-2.3\js\jquery.jqzoom-core.js" />
+    <Content Include="js\slider\jquery.liquid-slider.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="ResetPassword.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\ContactUtil.cs" />
     <Compile Include="App_Code\CustomerUtil.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,8 +146,17 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\jqzoom_ev-2.3\images\Thumbs.db" />
+    <Content Include="js\jqzoom_ev-2.3\README.md" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
