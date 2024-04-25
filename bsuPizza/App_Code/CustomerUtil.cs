@@ -61,6 +61,7 @@ namespace bsuPizza.App_Code
             SqlCommand cmd = new SqlCommand(checkUser, conn);
             cmd.Parameters.AddWithValue("@UserName", UserName);
             SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
             if (dr.HasRows) {
                 if (dr["Password"].ToString().Equals(Password)) {
                     dr.Close();

@@ -13,7 +13,7 @@ namespace bsuPizza
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["user"] = TextBoxUserName.Text;
         }
 
         protected void ButtonLogin_Click(object sender, EventArgs e) { // start buttonLogin_click method
@@ -25,7 +25,7 @@ namespace bsuPizza
                 LabelMessage.Visible = true;
                 LabelMessage.Text = "Welcome Back!";
                 LabelMessage.ForeColor = Color.Red;
-                // Response.AddHeader("refresh", "4; url=Home.aspx");
+                Response.AddHeader("refresh", "4; url=Home.aspx");
             } else { // close if, start else
                 LabelMessage.Visible = true;
                 LabelMessage.Text = "Your UserName and Password are not correct!";

@@ -70,7 +70,8 @@
                     ID="ButtonResetPassword" 
                     runat="server"
                     Text="Reset Passowrd" 
-                    class="btn btn-primary btn-lg" OnClick="ButtonResetPassword_Click" />
+                    class="btn btn-primary btn-lg" 
+                    OnClick="ButtonResetPassword_Click" />
                 <br />
                 <asp:Label 
                     ID="LabelMessage" 

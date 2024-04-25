@@ -71,10 +71,12 @@
     <Content Include="App_Data\bsuPizza_log.ldf">
       <DependentUpon>bsuPizza.mdf</DependentUpon>
     </Content>
+    <Content Include="BasicUser.aspx" />
     <Content Include="css\bootstrap-drawer.css" />
     <Content Include="css\bsuPizza.css" />
     <Content Include="css\introjs.css" />
     <Content Include="css\liquid-slider.css" />
+    <Content Include="deliveryInfo.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="images\bsulogo.jpg" />
     <Content Include="images\chicago.jpg" />
@@ -117,13 +119,35 @@
     <Content Include="js\jqzoom_ev-2.3\js\jquery.jqzoom-core.js" />
     <Content Include="js\slider\jquery.liquid-slider.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="OrderConfirm.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="ResetPassword.aspx" />
+    <Content Include="Thanks.aspx" />
+    <Content Include="UserAccount.aspx" />
     <Content Include="Web.config" />
+    <Content Include="ZoomPage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\AddressUtil.cs" />
     <Compile Include="App_Code\ContactUtil.cs" />
     <Compile Include="App_Code\CustomerUtil.cs" />
+    <Compile Include="App_Code\EncryptPassword.cs" />
+    <Compile Include="App_Code\ShoppingCartUtil.cs" />
+    <Compile Include="BasicUser.aspx.cs">
+      <DependentUpon>BasicUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicUser.aspx.designer.cs">
+      <DependentUpon>BasicUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deliveryInfo.aspx.cs">
+      <DependentUpon>deliveryInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deliveryInfo.aspx.designer.cs">
+      <DependentUpon>deliveryInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,6 +161,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderConfirm.aspx.cs">
+      <DependentUpon>OrderConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderConfirm.aspx.designer.cs">
+      <DependentUpon>OrderConfirm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
@@ -152,6 +190,27 @@
     </Compile>
     <Compile Include="ResetPassword.aspx.designer.cs">
       <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Thanks.aspx.cs">
+      <DependentUpon>Thanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thanks.aspx.designer.cs">
+      <DependentUpon>Thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccount.aspx.cs">
+      <DependentUpon>UserAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAccount.aspx.designer.cs">
+      <DependentUpon>UserAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZoomPage.aspx.cs">
+      <DependentUpon>ZoomPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZoomPage.aspx.designer.cs">
+      <DependentUpon>ZoomPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -63,7 +63,8 @@
                     ID="ButtonLogin" 
                     runat="server" 
                     Text="Login" 
-                    class="btn btn-success" />
+                    class="btn btn-success" 
+                    OnClick="ButtonLogin_Click"/>
                 <br />
                 <asp:Label 
                     ID="LabelMessage" 

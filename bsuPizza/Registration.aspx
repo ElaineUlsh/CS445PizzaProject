@@ -242,11 +242,20 @@
         <!-- Button group -->
         <div class="form-group">
             <div class="col-sm-4 control-label">
-                <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
+                <asp:Label 
+                    ID="lblWelcome" 
+                    runat="server" 
+                    Text="Welcome">
+                </asp:Label>
             </div>
             <div class="col-sm-4">
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit"
-                    CssClass="btn btn-primary" OnClick="btnSubmit_Click"></asp:Button>
+                <asp:Button 
+                    ID="btnSubmit" 
+                    runat="server" 
+                    Text="Submit"
+                    CssClass="btn btn-primary" 
+                    OnClick="btnSubmit_Click">
+                </asp:Button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input id="btnReset" type="reset" value="Reset" class="btn btn-danger" />
             </div>

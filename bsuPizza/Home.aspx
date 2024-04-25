@@ -15,8 +15,7 @@
         <link rel="stylesheet" href="css/bsuPizza.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <style type="text/css">
             footer p {
@@ -114,8 +113,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header"> <!-- start header -->
-                            <button type="button" class="close" aria-label="Close the window" data-
-                            dismiss="modal">&times;</button>
+                            <button type="button" class="close" aria-label="Close the window" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">Contact</h4>
                         </div><!-- close header -->
                         <div class="modal-body"><!-- start body -->
