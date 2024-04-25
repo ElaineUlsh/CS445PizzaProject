@@ -21,9 +21,6 @@ namespace bsuPizza
             CustomerUtil c = new CustomerUtil().GetUserInformation(TextBoxUserName.Text);
             if (c.Email.Equals(TextBoxEmail.Text))
             {
-                //int rand = new Random().Next(100000, 999999);
-                //string newPassoword = "bsu"+rand;
-                //Attention: we used the below one as easy way:
                 string newPassoword = "12345bsu";
                 c.ResetPassword(newPassoword); //call ResetPassword method
                 LabelMessage.Visible = true;
